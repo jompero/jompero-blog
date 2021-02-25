@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Dani Jompero, Game Design Blog",
+    title: "Dani Jompero, Game Designer",
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -17,7 +17,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/content/images/icon.png",
       },
     },
     "gatsby-transformer-remark",
@@ -27,9 +27,17 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: "./src/content/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: "./src/content/posts/",
+      },
+      __key: "posts",
     },
     {
       resolve: "gatsby-source-filesystem",
@@ -38,6 +46,14 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "about",
+        path: "./src/about.md",
+      },
+      __key: "about",
     },
   ],
 };

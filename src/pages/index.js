@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 // styles
 const pageStyles = {
@@ -54,10 +54,10 @@ const descriptionStyle = {
 }
 
 // markup
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   return (
     <main style={pageStyles}>
-      <title>Dani Jompero, Game Designer</title>
+      <title>{data.site.siteMetadata.title}</title>
       <header>
         <Link to="/about/" style={linkStyle}>
           About
@@ -71,5 +71,15 @@ const IndexPage = () => {
     </main>
   )
 }
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
 
 export default IndexPage
