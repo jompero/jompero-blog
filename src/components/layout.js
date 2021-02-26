@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, Link, graphql } from "gatsby";
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import "@fontsource/open-sans";
 
 // Background: #FFFFB4
@@ -76,7 +76,17 @@ const GlobalStyle = createGlobalStyle`
   blockquote p {
     display: inline;
   }
+
+  hr.solid {
+    border: 0;
+    height: 1px;
+    background: #444444;
+  }
 `;
+
+const StyledLink = styled(Link)`
+  background: none;
+`
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(
@@ -95,13 +105,14 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <title>{data.site.siteMetadata.title}</title>
       <header>
-        <Link to="/about/">About</Link>
+        <StyledLink to="/about/">About</StyledLink>
       </header>
       <h1>
-        Dani Jompero
+        <StyledLink to="/">Dani Jompero</StyledLink>
         <br />
-        <span>Game Designer</span>
+        <span style={{fontSize: "60%", verticalAlign: "top"}}>Game Designer</span>
       </h1>
+      <hr class="solid"></hr>
       {children}
     </main>
   );
