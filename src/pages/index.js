@@ -8,13 +8,21 @@ const StyledLink = styled(Link)`
 `
 
 const BlogTitle = styled.h3`
-  line-height: 0px;
+
 `
 
 const BlogDate = styled.span`
   font-size: smaller;
   color: #737373;
-  float: right;
+  
+  @media (min-width: 768px) {
+    float: right;
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+    font-size: 50%;
+  }
 `
 
 const Excerpt = styled.p`
