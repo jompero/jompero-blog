@@ -50,3 +50,14 @@ module.exports = {
     }
   ],
 };
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type MarkdownRemarkFrontmatter implements Node @dontInfer {
+      title: Title
+      date: Date
+    }
+  `
+  createTypes(typeDefs)
+}
