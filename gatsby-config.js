@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/",
   siteMetadata: {
     title: "Dani Jompero, Game Designer",
     siteUrl: "http://www.danijompero.com",
