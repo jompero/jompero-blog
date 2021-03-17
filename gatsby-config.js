@@ -54,12 +54,11 @@ module.exports = {
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = `
-    type MarkdownRemark implements Node @dontInfer {
+    type MarkdownRemark implements Node {
       frontmatter: Frontmatter
     }
-    type Frontmatter {
-      Date: Date
-      
+    type Frontmatter @dontInfer {
+      date: Date
     }
   `
   createTypes(typeDefs)
