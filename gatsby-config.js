@@ -1,7 +1,8 @@
 module.exports = {
-  pathPrefix: "/jompero-blog",
+  pathPrefix: "/",
   siteMetadata: {
     title: "Dani Jompero, Game Designer",
+    siteUrl: "http://www.danijompero.com",
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -57,7 +58,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     type MarkdownRemark implements Node {
       frontmatter: MarkdownRemarkFrontmatter
     }
-    type MarkdownRemarkFrontmatter {
+    type MarkdownRemarkFrontmatter @dontinfer {
       title: String
       date: String
     }
