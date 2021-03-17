@@ -57,8 +57,9 @@ exports.createSchemaCustomization = ({ actions }) => {
     type MarkdownRemark implements Node {
       frontmatter: Frontmatter
     }
-    type Frontmatter @dontInfer {
-      date: Date
+    type Frontmatter {
+      title: String
+      date: String
     }
   `
   createTypes(typeDefs)
