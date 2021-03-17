@@ -55,9 +55,9 @@ exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = `
     type MarkdownRemark implements Node {
-      frontmatter: Frontmatter
+      frontmatter: MarkdownRemarkFrontmatter
     }
-    type Frontmatter {
+    type MarkdownRemarkFrontmatter {
       title: String
       date: String
     }
