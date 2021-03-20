@@ -1,5 +1,7 @@
 ---
 date: "2020-03"
+title: "ASD"
+status: "draft"
 ---
 
 ##### Table of Contents
@@ -67,7 +69,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 Emphasis, aka italics, with _asterisks_ or _underscores_.
 
-Strong emphasis, aka bold, with **asterisks** or **underscores**.
+Strong emphasis, aka bold, with **asterisks** or **underscores**.[^1]
 
 Combined emphasis with **asterisks and _underscores_**.
 
@@ -92,7 +94,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 1. First ordered list item
 
-2. Another item
+2. Another item [^2]
 
    - Unordered sub-list.
 

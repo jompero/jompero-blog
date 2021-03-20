@@ -60,6 +60,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     type MarkdownRemarkFrontmatter @dontinfer {
       title: String
       date: String
+      status: String
     }
   `
   createTypes(typeDefs)

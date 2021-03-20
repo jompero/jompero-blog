@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 const StyledLink = styled(Link)`
   background: none;
+  box-shadow: none;
 `;
 
 const BlogTitle = styled.h3``;

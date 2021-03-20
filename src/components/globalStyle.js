@@ -29,6 +29,28 @@ const GlobalStyle = createGlobalStyle`
     background-color: #FFB6B9;
     border-radius: 0.25rem;
     padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.5); 
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.5);
+    transition: box-shadow 0.1s
+  }
+
+  a:hover {
+    -webkit-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.4); 
+    box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.4);
+  }
+
+  a:active {
+    margin-top: 5;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5); 
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+  }
+
+  .footnote-ref {
+    border-bottom: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    line-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   code {

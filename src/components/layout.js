@@ -23,6 +23,7 @@ const StyledLink = styled(Link)`
   font-weight: normal;
   background: none;
   text-decoration: none;
+  box-shadow: none;
 `
 
 const Layout = ({ children }) => {
