@@ -1,6 +1,7 @@
 ---
 title: "Lego Bricks Onboarding Analysis"
 date: "2020-03-13"
+status: "draft"
 ---
 I have had the opportunity to observe my kid's first experiences with Duplos, the Lego bricks targeted for toddlers. The sets have not come packed with instructions, leaving me and my kid copy the image from the box. My kid, however, does not care about what's on the box and prefers to just connecting them together randomly. Even without building goals, I've seen the fine motor skills and understanding of the lego rules grow. These skills learned early will help  building with Lego bricks at later age. I have witnessed older kids and adults alike having cumbersome first experiences with Legos, however, with attention to onboarding, Lego Group has managed to ensure that anyone can enjoy Legos right out of the box.
 
